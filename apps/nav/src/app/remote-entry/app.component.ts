@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component, ViewEncapsulation } from '@angular/core';
 import { SharedModule } from '@testnx/shared';
+import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
+import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzMessageService } from 'ng-zorro-antd/message';
 import { NzUploadChangeParam } from 'ng-zorro-antd/upload';
 export interface Menu {
@@ -15,7 +17,7 @@ export interface Menu {
 
 @Component({
   selector: 'app-leftnav',
-  imports: [CommonModule, SharedModule],
+  imports: [CommonModule, SharedModule,],
   templateUrl: './app.component.html',
   styleUrl: "./app.component.scss",
   encapsulation: ViewEncapsulation.None,

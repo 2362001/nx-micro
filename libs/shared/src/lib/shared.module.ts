@@ -38,7 +38,6 @@ import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzListModule } from 'ng-zorro-antd/list';
 import { NzMentionModule } from 'ng-zorro-antd/mention';
-import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { NzModalModule } from 'ng-zorro-antd/modal';
 import { NzPageHeaderModule } from 'ng-zorro-antd/page-header';
 import { NzPaginationModule } from 'ng-zorro-antd/pagination';
@@ -69,7 +68,8 @@ import { NzTreeSelectModule } from 'ng-zorro-antd/tree-select';
 import { NzTreeViewModule } from 'ng-zorro-antd/tree-view';
 import { NzTypographyModule } from 'ng-zorro-antd/typography';
 import { NzUploadModule } from 'ng-zorro-antd/upload';
-
+import { NzWaterMarkModule } from 'ng-zorro-antd/water-mark';
+import { NzMenuModule } from 'ng-zorro-antd/menu';
 @NgModule({
     exports: [
         FormsModule,
@@ -142,6 +142,7 @@ import { NzUploadModule } from 'ng-zorro-antd/upload';
         NzPipesModule,
         DragDropModule,
         CdkTreeModule,
+        NzWaterMarkModule 
     ],  
 })
 export class SharedModule {}
