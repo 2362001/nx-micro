@@ -1,0 +1,27 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@app/shared-state": ["shared/src/lib/global.store.ts"],
+      "@app/shared-state/*": ["shared/src/lib/*"],
+      "@mylib/store": ["shared-store/src/index.ts"],
+      "@testnx/shared": ["libs/shared/src/index.ts"],
+      "header/Routes": ["apps/header/src/app/remote-entry/entry.routes.ts"],
+      "nav/Routes": ["apps/nav/src/app/remote-entry/entry.routes.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

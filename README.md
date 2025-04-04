@@ -1,0 +1,1 @@
+## run all : nx run-many --target=serve --projects=shell,nav,header --parallel
